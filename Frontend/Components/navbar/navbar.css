@@ -1,0 +1,140 @@
+.navbar{
+    background-color: #FFA650;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 120px;
+    width: 100%;
+    padding: 0px 5%;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.logo img{
+    height: 6rem;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2.5rem;
+    width: auto;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+}
+
+.menu .menu-list li a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fbf7eb8e;
+    transition: 0.3s ease-in-out;
+}
+
+.menu .menu-list li a.active , .menu .menu-list li a:hover {
+    color: #fbf7eb;
+    transition: 0.3s ease-in-out;
+}
+
+.menu .menu-list li a.active {
+    font-weight: 500;
+}
+
+.menu .menu-list li a.active::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #fbf7eb;
+    display: block;
+    margin-top: 5px;
+}
+
+.menu-button{
+    background-color: #e35633;
+    color: #fbf7eb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu i{
+    font-size: 1.5rem;
+    color: #fbf7eb;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+/* Small Devices (Mobile Landscape) */
+@media screen and (max-width: 576px) {
+    .navbar{
+        height: 7vh;
+        min-height: 80px;
+    }
+
+    .logo img{
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menu .menu-button{
+        display: none;
+    }
+
+    .menu{
+        position: relative;
+    }
+
+    .menu .menu-list{
+        position: fixed;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        background-color: #FFA650;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        padding: 3rem;
+        transform: translateX(100%);
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu .menu-list.active{
+        transform: translateX(50%);
+        transition: 0.3s ease-in-out;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
