@@ -3,6 +3,8 @@ import Navbar from './Components/navbar/navbar';
 import Home from './Components/home/home';
 import About from './Components/about/about';
 
+import Testimonial from './Components/testimonial/testimonial';
+
 import Achievements from './Components/achievement/achievement';
 import News from './Components/news/news';
 import Footer from './Components/footer/footer';
@@ -16,6 +18,8 @@ function App() {
         <Navbar />
         <Home />
         <About />
+
+        <Testimonial />
 
         <Achievements />
         <News />
