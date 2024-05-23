@@ -1,0 +1,15 @@
+#footer{
+    background-color: #FDC360;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+
+@media screen and (max-width:350px) {
+    #footer{
+        display: none;
+    }
+}

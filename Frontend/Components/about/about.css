@@ -1,0 +1,129 @@
+#about-us {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 40px 0 120px 0;
+    margin: 0;
+}
+
+.about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.left-side-banner {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+}
+
+.about-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px 0 80px 0;
+    padding: 0;
+    position: relative;
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #da441f;
+    z-index: -1;
+}
+
+.about-description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+}
+
+.about-button {
+    font-family: "Montserrat", sans-serif;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #e35633;
+    background-color: #ffffff;
+    border: 2px solid #141539;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.about-button:hover {
+    background-color: #e35633;
+    color: #ffffff;
+    border: 2px solid #e35633;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 800px) {
+    #about-us {
+        padding-top: 0px;
+        min-height: 800px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .left-side-banner {
+        top: 250px;
+        width: 50%;
+        left: -80px;
+    }
+
+    .about-description {
+        margin-top: 70px;
+        width: 68%;
+        text-align: right;
+        align-self: flex-end;
+        margin-right: 6%;
+    }
+
+    .about-button {
+        align-self: flex-end;
+        margin-right: 6%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #about-us {
+        display: none;
+    }
+}

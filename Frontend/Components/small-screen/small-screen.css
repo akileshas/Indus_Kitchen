@@ -1,0 +1,5 @@
+@media screen and (min-width:351px) {
+    .small-screen{
+        display: none;
+    }
+}

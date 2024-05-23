@@ -152,3 +152,9 @@
         transition: 0.3s ease-in-out;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .navbar{
+        display: none;
+    }
+}

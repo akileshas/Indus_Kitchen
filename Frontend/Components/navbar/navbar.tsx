@@ -45,10 +45,10 @@ const Navbar = () => {
                         <a href="#home" className="menu-link-home active">Home</a>
                     </li>
                     <li>
-                        <a href="#about" className="menu-link-about-us">About Us</a>
+                        <a href="#about-us" className="menu-link-about-us">About Us</a>
                     </li>
                     <li>
-                        <a href="#contact" className="menu-link-why-choose-us">Why Choose Us</a>
+                        <a href="#why-choose-us" className="menu-link-why-choose-us">Why Choose Us</a>
                     </li>
                     <li>
                         <a href="#menu" className="menu-link-me">Menu</a>
