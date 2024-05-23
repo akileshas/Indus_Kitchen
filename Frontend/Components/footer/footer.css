@@ -1,11 +1,11 @@
 #footer{
     background-color: #FDC360;
-    height: 8vh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
+    padding: 5rem;
 }
 
 @media screen and (max-width:350px) {
