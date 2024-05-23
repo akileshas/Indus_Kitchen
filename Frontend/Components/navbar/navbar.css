@@ -39,9 +39,9 @@
 
 .menu .menu-list li a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
     color: #fbf7eb8e;
     transition: 0.3s ease-in-out;
 }
@@ -52,7 +52,7 @@
 }
 
 .menu .menu-list li a.active {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .menu .menu-list li a.active::after {
@@ -61,7 +61,6 @@
     height: 2px;
     background-color: #fbf7eb;
     display: block;
-    margin-top: 5px;
 }
 
 .menu-button{
@@ -89,7 +88,6 @@
     transition: 0.6s ease-in-out;
 }
 
-/* Small Devices (Mobile Landscape) */
 @media screen and (max-width: 576px) {
     .navbar{
         height: 7vh;
@@ -101,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 970px) {
     .menu .menu-button{
         display: none;
     }
@@ -129,12 +127,28 @@
         transition: 0.3s ease-in-out;
     }
 
+    .mobile-menu{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 970px) {
     .menu .menu-list.active{
         transform: translateX(50%);
         transition: 0.3s ease-in-out;
     }
+}
 
-    .mobile-menu{
-        display: block;
+@media screen and (min-width: 340px) and (max-width: 576px) {
+    .menu .menu-list.active{
+        transform: translateX(30%);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .menu .menu-list.active{
+        transform: translateX(0%);
+        transition: 0.3s ease-in-out;
     }
 }

@@ -1,0 +1,144 @@
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(85vh + 80px);
+    width: 100vw;
+    background-image: url("../../Images/Home2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(255, 255, 255, 0.130);
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.text .welcome-title{
+    background-color: #e35633;
+    color: #fbf7eb;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-transform: none;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.text .title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    font-size: 2.2rem;
+    color: #fbf7eb;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    margin-bottom: 1rem;
+}
+
+.text .description span{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fbf7eb;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.24);
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 400px) {
+
+    .text .welcome-title{
+        font-size: 0.8rem;
+    }
+
+    .text .title{
+        font-size: 1rem;
+    }
+
+    .text .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text .description span{
+        font-size: 0.8rem;
+        word-spacing: 0.2rem;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+
+    .text .welcome-title{
+        font-size: 1rem;
+    }
+
+    .text .title{
+        font-size: 1.2rem;
+    }
+    
+    .text .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text .description span {
+        font-size: 1rem;
+        word-spacing: 0.2rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 858px) {
+
+    .text .welcome-title{
+        font-size: 1.2rem;
+    }
+
+    .text .title{
+        font-size: 1.5rem;
+    }
+
+    .text .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text .description span {
+        font-size: 1.2rem;
+        word-spacing: 0.2rem;
+    }
+    
+}
