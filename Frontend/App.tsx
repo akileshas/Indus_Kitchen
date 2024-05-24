@@ -4,6 +4,7 @@ import Home from './Components/home/home';
 import About from './Components/about/about';
 
 import Testimonial from './Components/testimonial/testimonial';
+import Form from './Components/form/form';
 
 import Achievements from './Components/achievement/achievement';
 import News from './Components/news/news';
@@ -20,6 +21,7 @@ function App() {
         <About />
 
         <Testimonial />
+        <Form />
 
         <Achievements />
         <News />
