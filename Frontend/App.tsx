@@ -5,7 +5,7 @@ import About from './Components/about/about';
 
 import Testimonial from './Components/testimonial/testimonial';
 import Form from './Components/form/form';
-
+import Contact from './Components/contact/contact';
 import Achievements from './Components/achievement/achievement';
 import News from './Components/news/news';
 import Footer from './Components/footer/footer';
@@ -22,7 +22,7 @@ function App() {
 
         <Testimonial />
         <Form />
-
+        <Contact />
         <Achievements />
         <News />
         <Footer />
