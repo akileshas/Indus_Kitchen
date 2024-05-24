@@ -147,9 +147,30 @@
 }
 
 .container-foot .footer-container .media-section .social-cont i {
-    font-size: 1.8rem;
     cursor: pointer;
     transition: 0.2s;
+}
+
+.container-foot .footer-container .media-section .social-cont a {
+    text-decoration: none;
+    font-size: 1.8rem;  
+    color: #000000;
+}
+
+.container-foot .footer-container .media-section .social-cont .facebook {
+    padding-top: 3px;
+}
+
+.container-foot .footer-container .media-section .social-cont .youtube {
+    padding-top: 4px;
+}
+
+.container-foot .footer-container .media-section .social-cont .youtube a i {
+    font-size: 2rem;
+}
+
+.container-foot .footer-container .media-section .social-cont .x a i {
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1290px) and (max-width: 1500px) {

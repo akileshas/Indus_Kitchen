@@ -17,13 +17,19 @@ const Footer = () => {
                         </div>
                         <div className="social-cont">
                             <div className="facebook">
-                                <i className='bx bxl-facebook' ></i>
+                                <a href="https://www.facebook.com/profile.php?id=61558270111264&mibextid=rS40aB7S9Ucbxw6v">
+                                    <i className='bx bxl-facebook' ></i>
+                                </a>
                             </div>
                             <div className="x">
-                                <i className='bx bxl-twitter'></i>
+                                <a href="">
+                                    <i className="fa-brands fa-x-twitter"></i>
+                                </a>
                             </div>
                             <div className="youtube">
-                                <i className='bx bxl-youtube' ></i>
+                                <a href="https://youtube.com/@indumathirajamani8397?si=JeTkDWH3ru7BPxrj">
+                                    <i className='bx bxl-youtube' ></i>
+                                </a>
                             </div>
                         </div>
                     </div>

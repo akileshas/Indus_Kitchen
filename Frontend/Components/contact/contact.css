@@ -1,3 +1,203 @@
-#contact{
+#contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #000000;
+    text-transform: capitalize;
+    position: relative;
+    width: fit-content;
+}
+
+.contact-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 3px;
+    background-color: #da441f;
+}
+
+.contact-container {
+    width: 100%;
+    height: auto;
+    background-color: #FDC360;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contact-container .location-map {
+    height: 415px;
+    width: 446px;
+    overflow: hidden;
+}
+
+.contact-container .mobile-location-map {
+    height: 290px;
+    width: 310px;
+    overflow: hidden;
+}
+
+.contact-container .contact-details .contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.contact-container .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.contact-container .contact-card .contact-icon i {
+    font-size: 1.4rem;
+}
+
+.contact-container .contact-details .contact-card .contact-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.contact-container .contact-details .contact-card .contact-text-head p:nth-child(1) {
+    font-weight: 600;
+}
+
+.contact-container .location-map {
+    margin-right: -100px;
+}
+
+.box-round {
     display: none;
+}
+
+.contact-container .mobile-location-map{
+    display: none;
+}
+
+@media screen and (min-width: 1140px) and (max-width: 1410px) {
+    .contact-container .location-map {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1140px) {
+    .contact-container .qr-code {
+        position: absolute;
+        bottom: -200px;
+        left: 8%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    }
+    .contact-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+    .box-round {
+        display: block;
+        width: 100%;
+    }
+    .box-round img {
+        width: 100%;
+    }
+    .contact-container .location-map {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 300px;
+    }
+    .contact-container .location-map {
+        margin-right: 0;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -170px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    }
+    .box-round {
+        display: block;
+        width: 100%;
+    }
+    .box-round img {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 200px;
+    }
+    .contact-container .location-map {
+        display: none;
+    }
+    .contact-container .mobile-location-map{
+        display: block;
+        margin-right: 0;
+        border-radius: 10px;
+        position: absolute;
+        bottom: -130px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    }
+    .box-round {
+        display: block;
+        width: 100%;
+    }
+    .box-round img {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    .contact-container .contact-details .contact-card {
+        gap: 2rem;
+    }
+    .contact-container .contact-details .contact-card .contact-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #contact {
+        display: none;
+    }
 }
