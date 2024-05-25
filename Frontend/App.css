@@ -1,0 +1,39 @@
+#ScrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e35633;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#ScrollToTopBtn i {
+    font-size: 30px;
+}
+
+#ScrollToTopBtn.show {
+    display: block;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+#ScrollToTopBtn:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #ff3300;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 350px) {
+    #ScrollToTopBtn,
+    #ScrollToTopBtn.show {
+        display: none;
+    }
+}
