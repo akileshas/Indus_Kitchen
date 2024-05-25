@@ -258,7 +258,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     #form{
         padding-top: 0;
         margin-top: 0;

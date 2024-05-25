@@ -9,7 +9,7 @@
     max-height: 120px;
     width: 100%;
     padding: 0px 5%;
-    position: sticky;
+    position: relative;
     top: 0px;
     z-index: 999;
 }
@@ -130,7 +130,6 @@
         padding: 3rem;
         transform: translateX(100%);
         color: black;
-        transition: 0.3s ease-in-out;
     }
 
     .mobile-menu{
