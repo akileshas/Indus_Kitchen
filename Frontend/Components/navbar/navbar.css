@@ -37,6 +37,10 @@
     height: 100%;
 }
 
+.menu .menu-list li {
+    position: relative;
+}
+
 .menu .menu-list li a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -61,6 +65,8 @@
     height: 2px;
     background-color: #fbf7eb;
     display: block;
+    position: absolute;
+    bottom: -5px;
 }
 
 .menu-button{

@@ -3,9 +3,9 @@ import './menu.css';
 
 const Menu = () => {
     return (
-        <div id="menu">
+        <section id="menu">
 
-        </div>
+        </section>
     );
 };
 

@@ -6,7 +6,7 @@ import LeftSideBanner from "../../Images/About-Side-Banner.png";
 
 const About = () => {
     return (
-        <div id="about-us">
+        <section id="about-us">
             <div className="left-side-banner">
                 <img src={LeftSideBanner} alt="" />
             </div>
@@ -20,7 +20,7 @@ const About = () => {
                 </div>
                 <button className="about-button">Let's Connect</button>
             </div>
-        </div>
+        </section>
     );
 }; 
 

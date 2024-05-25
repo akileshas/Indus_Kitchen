@@ -8,7 +8,7 @@ import YourStory from "../../Images/yourstory.png";
 
 const Achievements = () => {
     return (
-        <div id="achievements">
+        <section id="achievements">
             <h1 className="title-achievement">As Seen & Recognised On</h1>
             <div className="achievement-container">
                 <div className="achievement-card">
@@ -27,7 +27,7 @@ const Achievements = () => {
                     <img src={YourStory} alt="" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

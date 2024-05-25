@@ -5,7 +5,7 @@ import NewsCard from "./newscard";
 
 const News: React.FC = () => {
     return (
-        <div id="news">
+        <section id="news">
             <div className="title-news">
                 <h1>In the News</h1>
             </div>
@@ -16,7 +16,7 @@ const News: React.FC = () => {
                     ))
                 }
             </div>
-        </div>
+        </section>
     );
 };
 

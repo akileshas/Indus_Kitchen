@@ -5,7 +5,7 @@ import TestimonialCard from "./testimonial-card";
 
 const Testimonial: React.FC = () => {
     return (
-        <div id="testimonials">
+        <section id="testimonials">
             <div className="title-testimonial">
                 <h1>Testimonials</h1>
             </div>
@@ -22,7 +22,7 @@ const Testimonial: React.FC = () => {
                     ))
                 }
             </div>
-        </div>
+        </section>
     );
 };
 

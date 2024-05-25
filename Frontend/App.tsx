@@ -46,8 +46,8 @@ function App() {
         <Home />
         <About />
         <Choose />
-        <Story />
         <Menu />
+        <Story />
         <Testimonial />
         <Form />
         <Contact />

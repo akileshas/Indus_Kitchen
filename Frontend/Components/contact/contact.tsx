@@ -5,7 +5,7 @@ import Wave from "../../Images/wave-design.png";
 
 const Contact = () => {
     return (
-        <div id="contact">
+        <section id="contact">
             <div className="contact-title">
                 <h1>Contact Us</h1>
             </div>
@@ -83,7 +83,7 @@ const Contact = () => {
             <div className="box-round">
                 <img src={Wave} alt="" />
             </div>
-        </div>
+        </section>
     );
 };
 

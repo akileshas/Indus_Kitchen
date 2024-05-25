@@ -5,7 +5,7 @@ import MobileFormImg from "../../Images/mobile-form.png"
 
 const Form = () => {
     return (
-        <div id="form">
+        <section id="form">
             <div className="form-container">
                 <div className="form-img-sec">
                     <img src={FormImg} alt="" />
@@ -53,7 +53,7 @@ const Form = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

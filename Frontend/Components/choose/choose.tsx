@@ -9,7 +9,7 @@ import LeafBanner from "../../Images/leaf-banner-img.png";
 
 const Choose = () => {
     return (
-        <div id="why-choose-us">
+        <section id="why-choose-us">
             <div className="title-choose">
                 <h1>Why Choose Us?</h1>
             </div>
@@ -59,7 +59,7 @@ const Choose = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     );
 };
 
