@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Components/navbar/navbar';
 import Home from './Components/home/home';
 import About from './Components/about/about';
+import Choose from './Components/choose/choose';
 
 import Testimonial from './Components/testimonial/testimonial';
 import Form from './Components/form/form';
@@ -19,6 +20,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Choose />
 
         <Testimonial />
         <Form />
