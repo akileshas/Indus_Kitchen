@@ -58,18 +58,6 @@
     padding: 0;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0rem;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
     height: 340px;
     width: 100%;
@@ -87,7 +75,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     height: 270px;
     width: 370px;
@@ -171,36 +159,154 @@
 }
 
 
+
+
+
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
-    height: 720px;
-    align-items: center;
+    height: 360px;
+    align-items: flex-end;
 }
-
-
-
-
-
-/* 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card-veg {
-    display: none;
-} */
-
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 4.5rem;
-    align-items: center;
-    height: 720px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    height: 360px;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    width: 920px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-wrapper {
+    display: flex;
+    gap: 70px;
+    transition: transform 0.5s ease;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #E35733;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 7px 10px;
+    border-radius: 50%;
+    border: #E35733 solid 3px;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 
+        1px 0 #E35733, 
+        -1px 0 #E35733, 
+        0 1px #E35733, 
+        0 -1px #E35733;
+
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button.prev {
+    left: 0px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button.next {
+    right: 0px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-slide:nth-child(1) {
+    margin-left: 15px;
 }
 
 
 
 
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card {
+
+
+
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-outer-carousel-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0rem;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-prev-button {
+    position: absolute;
+    top: 50px;
+    left: 24%;
+    z-index: 1;
+    font-size: 25px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-next-button {
+    position: absolute;
+    bottom: -5px;
+    left: 24%;
+    z-index: 1;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-outer-carousel-wrapper .menu-card-container .menu-item-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,11 +317,6 @@
     width: 100%;
     padding: 40px;
 }
-
-
-
-
-
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-banner-cont {
     position: absolute;
