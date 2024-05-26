@@ -1,0 +1,385 @@
+#menu {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0 0px 0;
+    margin: 0;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container .menu-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px 0 10px 0;
+    padding: 0;
+    position: relative;
+    width: fit-content;
+}
+
+.menu-container .menu-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 3px;
+    background-color: #da441f;
+}
+
+.menu-container .menu-outer-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
+    height: 340px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4rem;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+    height: 270px;
+    width: 370px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-text-container {
+    z-index: 1;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 57px;
+    border-radius: 10px;
+    background-color: #e35633;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: #e35633 solid 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button:hover {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button:hover a {
+    color: #e35633;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-text-container .menu-title-price-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-text-container .menu-title-card-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-title-card .menu-title-card-container .menu-title-card-text-container {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.82rem;
+}
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
+    height: 720px;
+    align-items: center;
+}
+
+
+
+
+
+/* 
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card-veg {
+    display: none;
+} */
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4.5rem;
+    align-items: center;
+    height: 720px;
+    width: 100%;
+}
+
+
+
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    padding: 40px;
+}
+
+
+
+
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-banner-cont {
+    position: absolute;
+    top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 0.5rem;
+    border: #56DB17 solid 1px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card-non-veg .mic-banner-cont {
+    border: rgb(224,52,28) solid 1px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-banner-cont .mic-bc-text-cont{
+    text-align: start;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-banner-cont .mic-bc-text-cont span:nth-child(1) {
+    color: #56DB17;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card-non-veg .mic-banner-cont .mic-bc-text-cont span:nth-child(1) {
+    color: rgb(224,52,28);
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-banner-cont .mic-bc-img-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    position: relative;
+    color: #e35633;
+    margin-bottom: 20px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title .mic-il-ct-black {
+    color: #000000;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background-color: #e35633;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com .mic-il-com-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 265px;
+    list-style: none;
+    line-height: 26px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-com .mic-il-com-list li p span:nth-child(1){
+    color: #e35633;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-breakfast .mic-il-com-list,
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-dinner .mic-il-com-list {
+    width: 200px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-breakfast,
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-item-card .mic-items-list .mic-il-dinner {
+    width: 230px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .menu-container .menu-title {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .menu-container .menu-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #menu {
+        display: none;
+    }    
+}
