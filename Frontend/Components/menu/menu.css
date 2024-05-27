@@ -158,44 +158,46 @@
     font-size: 0.82rem;
 }
 
-
-
-
-
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
     height: 360px;
     align-items: flex-end;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 20px;
-    height: 360px;
-    width: 100%;
+
+
+
+
+
+
+
+
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card {
     position: relative;
+    height: 360px;
+    width: 900px;
+}
+
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel {
+    position: relative;
+    height: 360px;
+    width: 900px;
     overflow: hidden;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container {
-    position: relative;
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper {
     display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
     justify-content: start;
-    gap: 10px;
-    width: 920px;
+    gap: 50px;
+    transition: all 0.3s ease-in-out;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-wrapper {
-    display: flex;
-    gap: 70px;
-    transition: transform 0.5s ease;
-}
-
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button {
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background-color: rgb(255, 255, 255);
     border: none;
     color: #E35733;
@@ -211,20 +213,16 @@
         -1px 0 #E35733, 
         0 1px #E35733, 
         0 -1px #E35733;
-
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button.prev {
-    left: 0px;
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button.prev {
+    left: -25px;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-button.next {
-    right: 0px;
+.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button.next {
+    right: -30px;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .menu-item-card-carousel .carousel-container .carousel-slide:nth-child(1) {
-    margin-left: 15px;
-}
 
 
 
@@ -272,23 +270,6 @@
     z-index: 1;
     font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

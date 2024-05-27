@@ -54,7 +54,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
                         <p>
                             <span>Sides: </span>
                             <span>{breakFast.sides}</span>
-                        </p>
+                        </p> 
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
                         <p>
                             <span>Sides: </span>
                             <span>{lunch.sides}</span>
-                        </p>
+                        </p>    
                     </li>
                     <li>
                         <p>
@@ -112,7 +112,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
                         <p>
                             <span>Sides: </span>
                             <span>{dinner.sides}</span>
-                        </p>
+                        </p>    
                     </li>
                 </ul>
             </div>
@@ -123,58 +123,51 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
 const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, nonVegMeals }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const items = [
-        <MenuItemCard
-            number={number}
-            classname={`menu-item-card-${number}-veg menu-item-card-veg`}
-            title="Vegetarian"
-            breakFast={vegMeals.breakfastMenu}
-            lunch={vegMeals.lunchMenu}
-            dinner={vegMeals.dinnerMenu}
-            logo={vegMeals.logo}
-        />,
-        <MenuItemCard
-            number={number}
-            classname={`menu-item-card-${number}-non-veg menu-item-card-non-veg`}
-            title="Non-Vegetarian"
-            breakFast={nonVegMeals.breakfastMenu}
-            lunch={nonVegMeals.lunchMenu}
-            dinner={nonVegMeals.dinnerMenu}
-            logo={nonVegMeals.logo}
-        />
-    ];
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, items.length - 1));
+    const goToNextSlide = () => {
+        setCurrentIndex(currentIndex + 1);
     };
 
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    const goToPrevSlide = () => {
+        setCurrentIndex(currentIndex - 1);
     };
 
     return (
         <div className={`menu-items-card menu-items-card-${number}`}>
             <div className="menu-item-card-carousel">
-                <div className="carousel-container">
-                    <div className="carousel-wrapper" style={{ transform: `translateX(-${currentIndex * 50}%)` }}>
-                        {items.map((item, index) => (
-                            <div className="carousel-slide" key={index}>
-                                {item}
-                            </div>
-                        ))}
-                    </div>
-                    {currentIndex === 1 && (
-                        <button className="carousel-button prev" onClick={prevSlide}>
-                            <i className="fa-solid fa-chevron-left"></i>
-                        </button>
-                    )}
-                    {currentIndex === 0  && (
-                        <button className="carousel-button next" onClick={nextSlide}>
-                            <i className="fa-solid fa-chevron-right"></i>
-                        </button>
-                    )}
+                <div 
+                    className="micc-wrapper"
+                    style={{ transform: `translateX(calc(20px - ${currentIndex * 900}px)) translateY(-20px)` }}
+                >
+                    <MenuItemCard 
+                        number={number}
+                        classname={`menu-item-card-${number}-veg menu-item-card-veg`}
+                        title="Vegetarian"
+                        breakFast={vegMeals.breakfastMenu}
+                        lunch={vegMeals.lunchMenu}
+                        dinner={vegMeals.dinnerMenu}
+                        logo={vegMeals.logo}
+                    />
+                    <MenuItemCard 
+                        number={number}
+                        classname={`menu-item-card-${number}-non-veg menu-item-card-non-veg`}
+                        title="Non-Vegetarian"
+                        breakFast={nonVegMeals.breakfastMenu}
+                        lunch={nonVegMeals.lunchMenu}
+                        dinner={nonVegMeals.dinnerMenu}
+                        logo={nonVegMeals.logo}
+                    />
                 </div>
-            </div>
+                </div>
+                {currentIndex > 0 && (
+                    <button className="carousel-button prev" onClick={goToPrevSlide}>
+                        <i className="fa-solid fa-chevron-left"></i>
+                    </button>
+                )}
+                {currentIndex < 1 && (
+                    <button className="carousel-button next" onClick={goToNextSlide}>
+                        <i className="fa-solid fa-chevron-right"></i>
+                    </button>
+                )}
         </div>
     );
 };
