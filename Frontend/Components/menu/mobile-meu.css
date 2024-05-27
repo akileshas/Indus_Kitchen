@@ -39,16 +39,27 @@
         padding: 0;
         margin: 0;
     }
+
+
+
+
+
+
+
+
+
+
+
     
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 1rem;
         padding: 0;
         margin: 0;
-        height: 1200px;  /* Adjustment needed */
+        height: 1050px;  /* Adjustment needed */
         width: 500px;
     }
 
@@ -138,12 +149,59 @@
         color: #e35633;
     }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card {
+        position: relative;
+        width: 500px;
+        height: 750px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel {
+        position: relative;
+        width: 400px;
+        height: 740px;
+        overflow: hidden;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        align-items: flex-end;
+        justify-content: start;
+        transition: all 0.3s ease-in-out;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button {
+        top: 50%;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: #E35733;
+        font-size: 15px;
+        cursor: pointer;
+        z-index: 1;
+        padding: 7px 10px;
+        border-radius: 50%;
+        border: #E35733 solid 3px;
+        transition: all 0.2s ease-in-out;
+        text-shadow: 
+            1px 0 #E35733, 
+            -1px 0 #E35733, 
+            0 1px #E35733, 
+            0 -1px #E35733;
+        position: absolute;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        left: -25px;
+    }
 
-
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        right: -30px;
+    }
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card {
         display: flex;
@@ -158,13 +216,6 @@
         padding: 40px;
         background-color: #ffffff;
     }
-
-
-    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card-non-veg {
-        display: none;
-    }
-
-
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-banner-cont {
         position: absolute;
@@ -223,7 +274,6 @@
         gap: 0.5rem;
         width: 300px;
         height: 220px;
-        /* overflow: hidden; */
         padding: 0;
         margin: 0
     }
@@ -232,8 +282,6 @@
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-dinner {
         height: 160px;
     }
-
-
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title {
         display: flex;
@@ -279,20 +327,6 @@
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-list li p span:nth-child(1) {
         color: #e35633;
     }
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
 }
 
 
@@ -306,6 +340,25 @@
 
 
 
+
+
+
+
+
+
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        top: 2px;
+        left: 65px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        top: 2px;
+        right: 70px;
+    }
+}
 
 @media screen and (min-width: 450px) and (max-width: 800px) {
     .mobile-menu-container .mobile-menu-title {

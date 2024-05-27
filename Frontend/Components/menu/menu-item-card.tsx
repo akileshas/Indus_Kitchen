@@ -188,7 +188,7 @@ export const MobileMenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, titl
             <div className="menu-item-card-carousel">
                 <div 
                     className="micc-wrapper"
-                    // style={{ transform: `translateX(calc(20px - ${currentIndex * 900}px)) translateY(-20px)` }}
+                    style={{ transform: `translateX(calc(15px - ${currentIndex * 400}px)) translateY(-20px)` }}
                 >
                     <MenuItemCard 
                         number={number}
@@ -210,6 +210,16 @@ export const MobileMenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, titl
                     />
                 </div>
             </div>
+            {currentIndex > 0 && (
+                <button className="carousel-button prev" onClick={goToPrevSlide}>
+                    <i className="fa-solid fa-chevron-left"></i>
+                </button>
+            )}
+            {currentIndex < 1 && (
+                <button className="carousel-button next" onClick={goToNextSlide}>
+                    <i className="fa-solid fa-chevron-right"></i>
+                </button>
+            )}
         </div>
     );
 }
