@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import MenuTitleCard from "./menu-title-card";
-import MenuItemsCard from "./menu-item-card";
+import MenuItemsCard, { MobileMenuItemsCard } from "./menu-item-card";
 import { MenuPackageTitles, MenuPackageItems } from "../../Data/menu-data";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper/modules";
 import './menu.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import './mobile-meu.css';
+
 
 const Menu = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,6 +60,40 @@ const Menu = () => {
                                 <i className="fa-solid fa-chevron-down"></i>
                             </div>
                         )}
+                    </div>
+                </div>
+            </div>
+            <div className="mobile-menu-container">
+                <h1 className="mobile-menu-title">Menu</h1>
+                <div className="mobile-menu-outer-flex-container">
+                    <div className="mobile-menu-outer-carousel">
+                        <div 
+                            className="mobile-menu-outer-carousel-wrapper"
+                            // style={{
+                            //     transform: `translateY(-${currentIndex * 400}px)`
+                            // }}
+                        >
+                            {
+                                MenuPackageTitles.map((item, index) => (
+                                    <div className={`mobile-menu-card-container mobile-menu-card-container-${index+1}`}>
+                                        <MenuTitleCard 
+                                            number={index+1}
+                                            startingPrice={item.startingPrice}
+                                            title={item.title}
+                                            description={item.description}
+                                            subscribeUrl={item.subscribeUrl}
+                                            backgroundImageUrl={item.backgroundImageUrl}
+                                        />
+                                        <MobileMenuItemsCard 
+                                            number={index+1}
+                                            title={item.title}
+                                            vegMeals={MenuPackageItems[index].vegMeals}
+                                            nonVegMeals={MenuPackageItems[index].nonVegMeals}
+                                        />
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
