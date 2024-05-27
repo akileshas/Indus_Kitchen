@@ -54,6 +54,12 @@ function App() {
         <Achievements />
         <News />
         <Footer />
+        <div id="developed-by">
+          <p>
+            Developed by &nbsp;
+            <a href="https://github.com/Akilesh-ML-Engineer">Akilesh A S</a>
+          </p>
+        </div>
         <SmallScreen />
       </div>
       <button
