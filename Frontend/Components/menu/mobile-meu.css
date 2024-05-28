@@ -1,0 +1,445 @@
+@media screen and (max-width: 1339px) {
+    .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mobile-menu-container .mobile-menu-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #000000;
+        text-transform: capitalize;
+        position: relative;
+        width: fit-content;
+    }
+    
+    .mobile-menu-container .mobile-menu-title::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        height: 3px;
+        background-color: #da441f;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel {
+        position: relative;
+        width: 500px;
+        height: 1060px;
+        overflow: hidden;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+        transform: translate(0px, 15px);
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-prev-button {
+        position: absolute;
+        top: -65px;
+        left: 47.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-next-button {
+        position: absolute;
+        top: -35px;
+        right: 47.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+    
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        height: 1050px;
+        width: 500px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin: 0 0 20px 0;
+        padding: 0;
+        height: 270px;
+        width: 370px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden; 
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-text-container {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        text-align: center;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-text-container .menu-title-price-description {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-text-container .menu-title-card-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-text-container .menu-title-card-description {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.82rem;
+    }
+    
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 57px;
+        border-radius: 10px;
+        background-color: #e35633;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border: #e35633 solid 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button a {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button:hover {
+        background-color: transparent;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container .menu-title-card-subscribe-button:hover a {
+        color: #e35633;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card {
+        position: relative;
+        width: 500px;
+        height: 750px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel {
+        position: relative;
+        width: 400px;
+        height: 740px;
+        overflow: hidden;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 30px;
+        align-items: flex-end;
+        justify-content: start;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button {
+        top: 50%;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: #E35733;
+        font-size: 15px;
+        cursor: pointer;
+        z-index: 1;
+        padding: 7px 10px;
+        border-radius: 50%;
+        border: #E35733 solid 3px;
+        transition: all 0.2s ease-in-out;
+        text-shadow: 
+            1px 0 #E35733, 
+            -1px 0 #E35733, 
+            0 1px #E35733, 
+            0 -1px #E35733;
+        position: absolute;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        left: 0px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        right: 0px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 650px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        padding: 40px;
+        background-color: #ffffff;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-banner-cont {
+        position: absolute;
+        top: -70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        gap: 0.5rem;
+        border: #56DB17 solid 1px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        font-weight: 500;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card-non-veg .mic-banner-cont {
+        border: rgb(224,52,28) solid 1px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card-non-veg .mic-banner-cont .mic-bc-img-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-banner-cont .mic-bc-text-cont {
+        text-align: start;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card-veg .mic-banner-cont .mic-bc-text-cont span:first-child {
+        color: #56DB17;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card-non-veg .mic-banner-cont .mic-bc-text-cont span:first-child {
+        color: rgb(224,52,28);
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        margin: 0  
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 300px;
+        height: 220px;
+        padding: 0;
+        margin: 0
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-breakfast ,
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-dinner {
+        height: 160px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 500;
+        position: relative;
+        color: #e35633;
+        margin-bottom: 20px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title .mic-il-ct-black {
+        color: #000000;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-title::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 90px;
+        height: 3px;
+        background-color: #e35633;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 265px;
+        list-style: none;
+        line-height: 26px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com .mic-il-com-list li p span:nth-child(1) {
+        color: #e35633;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container {
+        width: 300px;
+        height: 240px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card {
+        width: 300px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper {
+        gap: 40px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel {
+        width: 330px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper {
+        gap: 100px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-prev-button {
+        position: absolute;
+        top: -65px;
+        left: 46.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-next-button {
+        position: absolute;
+        top: -35px;
+        right: 46.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        top: 5px;
+        left: 10px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        top: 5px;
+        right: 10px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        top: 2px;
+        left: 65px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        top: 2px;
+        right: 70px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    .mobile-menu-container .mobile-menu-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mobile-menu-container .mobile-menu-title {
+        font-size: 2rem;
+    }
+}

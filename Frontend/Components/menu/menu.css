@@ -52,10 +52,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 1000px;
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
@@ -163,15 +164,6 @@
     align-items: flex-end;
 }
 
-
-
-
-
-
-
-
-
-
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card {
     position: relative;
     height: 360px;
@@ -223,23 +215,12 @@
     right: -30px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .menu-container .menu-outer-flex-container .menu-outer-carousel {
     position: relative;
     width: 100vw;
     height: 400px;
     overflow: hidden;
 }
-
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-outer-carousel-wrapper {
     display: flex;
@@ -255,37 +236,21 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-prev-button {
+.menu-container .menu-outer-flex-container .moc-prev-button {
     position: absolute;
     top: 50px;
-    left: 24%;
+    left: 10px;
     z-index: 1;
     font-size: 25px;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-next-button {
+.menu-container .menu-outer-flex-container .moc-next-button {
     position: absolute;
     bottom: -5px;
-    left: 24%;
+    left: 10px;
     z-index: 1;
     font-size: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-outer-carousel-wrapper .menu-card-container .menu-item-card {
     display: flex;
@@ -415,37 +380,30 @@
     width: 230px;
 }
 
+@media screen and (min-width: 1340px) and (max-width: 1400px) {
+    .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
+        gap: 1rem;
+    }
+    .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button.prev {
+        left: -12px;
+    }
+    .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button.next {
+        right: -18px;
+    }
+    .menu-container .menu-outer-flex-container .moc-prev-button {
+        left: 35px;
+    }
+    
+    .menu-container .menu-outer-flex-container .moc-next-button {
+        left: 35px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1340px) {
+    .mobile-menu-container {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 450px) and (max-width: 800px) {
     .menu-container .menu-title {
@@ -457,6 +415,12 @@
 @media screen and (max-width: 450px) {
     .menu-container .menu-title {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1339px) {
+    .menu-container {
+        display: none;
     }
 }
 

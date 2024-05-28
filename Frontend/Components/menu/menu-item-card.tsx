@@ -157,19 +157,71 @@ const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, 
                         logo={nonVegMeals.logo}
                     />
                 </div>
-                </div>
-                {currentIndex > 0 && (
-                    <button className="carousel-button prev" onClick={goToPrevSlide}>
-                        <i className="fa-solid fa-chevron-left"></i>
-                    </button>
-                )}
-                {currentIndex < 1 && (
-                    <button className="carousel-button next" onClick={goToNextSlide}>
-                        <i className="fa-solid fa-chevron-right"></i>
-                    </button>
-                )}
+            </div>
+            {currentIndex > 0 && (
+                <button className="carousel-button prev" onClick={goToPrevSlide}>
+                    <i className="fa-solid fa-chevron-left"></i>
+                </button>
+            )}
+            {currentIndex < 1 && (
+                <button className="carousel-button next" onClick={goToNextSlide}>
+                    <i className="fa-solid fa-chevron-right"></i>
+                </button>
+            )}
         </div>
     );
 };
+
+export const MobileMenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, nonVegMeals }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const goToNextSlide = () => {
+        setCurrentIndex(currentIndex + 1);
+    };
+
+    const goToPrevSlide = () => {
+        setCurrentIndex(currentIndex - 1);
+    };
+
+    return (
+       <div className={`menu-items-card menu-items-card-${number}`}>
+            <div className="menu-item-card-carousel">
+                <div 
+                    className="micc-wrapper"
+                    style={{ transform: `translateX(calc(15px - ${currentIndex * 400}px)) translateY(-20px)` }}
+                >
+                    <MenuItemCard 
+                        number={number}
+                        classname={`menu-item-card-${number}-veg menu-item-card-veg`}
+                        title="Vegetarian"
+                        breakFast={vegMeals.breakfastMenu}
+                        lunch={vegMeals.lunchMenu}
+                        dinner={vegMeals.dinnerMenu}
+                        logo={vegMeals.logo}
+                    />
+                    <MenuItemCard 
+                        number={number}
+                        classname={`menu-item-card-${number}-non-veg menu-item-card-non-veg`}
+                        title="Non-Vegetarian"
+                        breakFast={nonVegMeals.breakfastMenu}
+                        lunch={nonVegMeals.lunchMenu}
+                        dinner={nonVegMeals.dinnerMenu}
+                        logo={nonVegMeals.logo}
+                    />
+                </div>
+            </div>
+            {currentIndex > 0 && (
+                <button className="carousel-button prev" onClick={goToPrevSlide}>
+                    <i className="fa-solid fa-chevron-left"></i>
+                </button>
+            )}
+            {currentIndex < 1 && (
+                <button className="carousel-button next" onClick={goToNextSlide}>
+                    <i className="fa-solid fa-chevron-right"></i>
+                </button>
+            )}
+        </div>
+    );
+}
 
 export default MenuItemsCard;
