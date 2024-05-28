@@ -52,10 +52,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 1000px;
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container {
@@ -235,18 +236,18 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-prev-button {
+.menu-container .menu-outer-flex-container .moc-prev-button {
     position: absolute;
     top: 50px;
-    left: 24%;
+    left: 10px;
     z-index: 1;
     font-size: 25px;
 }
 
-.menu-container .menu-outer-flex-container .menu-outer-carousel .moc-next-button {
+.menu-container .menu-outer-flex-container .moc-next-button {
     position: absolute;
     bottom: -5px;
-    left: 24%;
+    left: 10px;
     z-index: 1;
     font-size: 25px;
 }
@@ -389,6 +390,13 @@
     .menu-container .menu-outer-flex-container .menu-outer-carousel .menu-card-container .menu-items-card .carousel-button.next {
         right: -18px;
     }
+    .menu-container .menu-outer-flex-container .moc-prev-button {
+        left: 35px;
+    }
+    
+    .menu-container .menu-outer-flex-container .moc-next-button {
+        left: 35px;
+    }
 }
 
 @media screen and (min-width: 1340px) {
@@ -409,7 +417,6 @@
         font-size: 2rem;
     }
 }
-
 
 @media screen and (max-width: 1339px) {
     .menu-container {

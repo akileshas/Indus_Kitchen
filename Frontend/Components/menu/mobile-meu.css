@@ -4,7 +4,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 4rem;
         padding: 0;
         margin: 0;
     }
@@ -38,18 +38,44 @@
         justify-content: center;
         padding: 0;
         margin: 0;
+        position: relative;
     }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel {
+        position: relative;
+        width: 500px;
+        height: 1060px;
+        overflow: hidden;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+        transform: translate(0px, 15px);
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-prev-button {
+        position: absolute;
+        top: -65px;
+        left: 47.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
 
-
-
-
-
-
-
-
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-next-button {
+        position: absolute;
+        top: -35px;
+        right: 47.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
     
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container {
         display: flex;
@@ -59,7 +85,7 @@
         gap: 1rem;
         padding: 0;
         margin: 0;
-        height: 1050px;  /* Adjustment needed */
+        height: 1050px;
         width: 500px;
     }
 
@@ -196,11 +222,11 @@
     }
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
-        left: -25px;
+        left: 0px;
     }
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
-        right: -30px;
+        right: 0px;
     }
 
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card {
@@ -329,24 +355,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+ 
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {

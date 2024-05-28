@@ -50,17 +50,17 @@ const Menu = () => {
                                 ))
                             }
                         </div>
-                        {currentIndex !== 0 && (
-                            <div onClick={goToPrevSlide} className="moc-prev-button">
-                                <i className="fa-solid fa-chevron-up"></i>
-                            </div>
-                        )}
-                        {currentIndex !== 5 && (
-                            <div onClick={goToNextSlide} className="moc-next-button">
-                                <i className="fa-solid fa-chevron-down"></i>
-                            </div>
-                        )}
                     </div>
+                    {currentIndex !== 0 && (
+                        <div onClick={goToPrevSlide} className="moc-prev-button">
+                            <i className="fa-solid fa-chevron-up"></i>
+                        </div>
+                    )}
+                    {currentIndex !== 5 && (
+                        <div onClick={goToNextSlide} className="moc-next-button">
+                            <i className="fa-solid fa-chevron-down"></i>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="mobile-menu-container">
@@ -69,9 +69,9 @@ const Menu = () => {
                     <div className="mobile-menu-outer-carousel">
                         <div 
                             className="mobile-menu-outer-carousel-wrapper"
-                            // style={{
-                            //     transform: `translateY(-${currentIndex * 400}px)`
-                            // }}
+                            style={{
+                                transform: `translate(0px, calc(15px - ${currentIndex * 1060}px))`
+                            }}
                         >
                             {
                                 MenuPackageTitles.map((item, index) => (
@@ -95,6 +95,16 @@ const Menu = () => {
                             }
                         </div>
                     </div>
+                    {currentIndex !== 0 && (
+                        <div onClick={goToPrevSlide} className="moc-prev-button">
+                            <i className="fa-solid fa-chevron-up"></i>
+                        </div>
+                    )}
+                    {currentIndex !== 5 && (
+                        <div onClick={goToNextSlide} className="moc-next-button">
+                            <i className="fa-solid fa-chevron-down"></i>
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
