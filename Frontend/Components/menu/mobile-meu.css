@@ -355,14 +355,72 @@
     }
 }
 
-@media screen and (max-width: 500px) {
- 
+@media screen and (max-width: 499px) {
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-title-card .menu-title-card-container {
+        width: 300px;
+        height: 240px;
+    }
 
-    
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card {
+        width: 300px;
+    }
 
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper {
+        gap: 40px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card {
+        width: 350px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel {
+        width: 330px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper {
+        gap: 100px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-prev-button {
+        position: absolute;
+        top: -65px;
+        left: 46.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .moc-next-button {
+        position: absolute;
+        top: -35px;
+        right: 46.5%;
+        z-index: 1;
+        font-size: 25px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
+        top: 5px;
+        left: 10px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.next {
+        top: 5px;
+        right: 10px;
+    }
+
+    .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .menu-item-card-carousel .micc-wrapper .menu-item-card .mic-items-list .mic-il-com {
+        width: 250px;
+    }
 }
 
-@media screen and (min-width: 350px) and (max-width: 600px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
     .mobile-menu-container .mobile-menu-outer-flex-container .mobile-menu-outer-carousel .mobile-menu-outer-carousel-wrapper .mobile-menu-card-container .menu-items-card .carousel-button.prev {
         top: 2px;
         left: 65px;
@@ -378,7 +436,6 @@
     .mobile-menu-container .mobile-menu-title {
         font-size: 2.5rem;
     }
-    
 }
 
 @media screen and (max-width: 450px) {
