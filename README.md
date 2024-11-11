@@ -8,6 +8,10 @@ Indu's Kitchen is a dynamic web platform dedicated to culinary exploration and d
 - **React.js**: A JavaScript library for building user interfaces.
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
+## Preview of the webpage
+
+![Preview of the Webpage](./preview/indus_kitchen.jpg)
+
 ## How to Run
 
 1. **Clone the Repository**:
